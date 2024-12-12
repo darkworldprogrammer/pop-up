@@ -1,0 +1,86 @@
+body{
+    background-color: #decdac;
+    margin: 0;
+    font-family: monospace;
+}
+.button{
+    background-color: cyan;
+    box-shadow: 0 0 5px 2px cyan;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.popup{
+    /* display: none; */
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: fixed;
+    inset: 0;
+    transform: scale(.1);
+    opacity: 0;
+    margin: auto;
+    box-shadow: 0 2px 8px 3px rgba(0, 0, 0, 0.5);
+}
+.close-icon{
+    font-size: 40px;
+    position: absolute;
+    right: 14px;
+    top: 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: serif;
+}
+h2{
+    font-size: 30px;
+}
+.open{
+    display: block;
+    transition: all .08s ease-in-out;
+    inset: 0;
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* .remove .popup{
+    transition: all .4s;
+    transform: scale(.1);
+} */ 
+ .subscribe{
+    display: flex;
+    gap: 10px;
+ }
+ .subscribe input{
+     width: 85%;
+     height: 40px;
+     box-sizing: border-box;
+ }
+ .subscribe input:focus{
+     border: none; 
+     border-bottom: 1px solid rgba(0, 47, 255, 0.518);
+     outline: none;
+    }
+ .subscribe input::placeholder {
+    color: rgba(128, 128, 128, 0.842);
+    font-family: monospace;
+}
+.subscribe button {
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(0, 34, 128, 0.441);
+    font-size: 18px;
+    color: rgb(255, 0, 43);
+    height: 30px;
+    margin-top: 13px;
+}
